@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products | Orgo Organic Shop</title>
+<meta name="description" content="Shop organic vegetables, fruits and spices from Orgo.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html"><img src="images/logo.svg" alt="Orgo Organic Shop" width="150" height="50"></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="products.html" class=active>Products</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact Us</a></li></ul></nav>
+    <div class="header-tools">
+      <a href="products.html" class="icon-btn" aria-label="Search products"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20 L16 16"/></svg></a>
+      <a href="products.html" class="icon-btn cart" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3 H5 L7.5 15 H18.5 L21 7 H6"/></svg><span class="cart-count" id="cartCount">0</span></a>
+    </div>
+  </div>
+</header>
+<main>
+<section class="page-banner">
+  <div class="container"><h1>Our Products</h1><p><a href="index.html">Home</a> / Products</p></div><svg class="grass" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 60 V30 l10 -14 l8 16l17 -19 l11 17l15 -24 l14 18l13 -15 l10 19l11 -20 l13 20l18 -25 l9 21l16 -16 l12 22l14 -21 l8 23l12 -26 l11 24l10 -17 l14 25l17 -22 l10 16l15 -27 l13 17l13 -18 l9 18l11 -23 l12 19l18 -14 l8 20l16 -19 l11 21l14 -24 l14 22l12 -15 l10 23l10 -20 l13 24l17 -25 l9 25l15 -16 l12 16l13 -21 l8 17l11 -26 l11 18l18 -17 l14 19l16 -22 l10 20l14 -27 l13 21l12 -18 l9 22l10 -23 l12 23l17 -14 l8 24l15 -19 l11 25l13 -24 l14 16l11 -15 l10 17l18 -20 l13 18l16 -25 l9 19l14 -16 l12 20l12 -21 l8 21l10 -26 l11 22l17 -17 l14 23l15 -22 l10 24l13 -27 l13 25l11 -18 l9 16l18 -23 l12 17l16 -14 l8 18l14 -19 l11 19l12 -24 l14 20l10 -15 l10 21l17 -20 l13 22l15 -25 l9 23l13 -16 l12 24l11 -21 l8 25l18 -26 l11 16l16 -17 l14 17l14 -22 l10 18l12 -27 l13 19l10 -18 l9 20l17 -23 l12 21l15 -14 l8 22l13 -19 l11 23l11 -24 l14 24l18 -15 l10 25l16 -20 l13 16l14 -25 l9 17l12 -16 l12 18l10 -21 l8 19l17 -26 l11 20l15 -17 l14 21l13 -22 l10 22l11 -27 l13 23l18 -18 l9 24l16 -23 l12 25 V60Z" fill="#8dc63f" opacity=".85"/></svg>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="shop-tools">
+      <div class="filters" role="group" aria-label="Filter products">
+        <button class="filter active" data-filter="all">All</button><button class="filter" data-filter="Vegetables">Vegetables</button>
+        <button class="filter" data-filter="Fruits">Fruits</button><button class="filter" data-filter="Spices">Spices</button>
+      </div>
+      <input type="search" id="productSearch" placeholder="Search products..." aria-label="Search products">
+    </div>
+    <div class="product-grid" id="productGrid"><article class="product-card" data-cat="Vegetables" data-name="fresh red tomatoes">
+  <div class="product-img"><img src="images/product-1.svg" alt="Fresh Red Tomatoes" loading="lazy"></div>
+  <div class="product-info"><span class="tag">Vegetables</span><h3>Fresh Red Tomatoes</h3>
+    <div class="product-row"><strong>$4.50<small> / kg</small></strong>
+    <button class="btn btn-sm add-cart" data-name="Fresh Red Tomatoes">Add to cart</button></div></div>
+</article><article class="product-card" data-cat="Vegetables" data-name="organic carrots">
+  <div class="product-img"><img src="images/product-2.svg" alt="Organic Carrots" loading="lazy"></div>
+  <div class="product-info"><span class="tag">Vegetables</span><h3>Organic Carrots</h3>
+    <div class="product-row"><strong>$3.20<small> / kg</small></strong>
+    <button class="btn btn-sm add-cart" data-name="Organic Carrots">Add to cart</button></div></div>
+</article><article class="product-card" data-cat="Vegetables" data-name="green broccoli">
+  <div class="product-img"><img src="images/product-3.svg" alt="Green Broccoli" loading="lazy"></div>
+  <div class="product-info"><span class="tag">Vegetables</span><h3>Green Broccoli</h3>
+    <div class="product-row"><strong>$3.80<small> / kg</small></strong>
+    <button class="btn btn-sm add-cart" data-name="Green Broccoli">Add to cart</button></div></div>
+</article><article class="product-card" data-cat="Fruits" data-name="crisp red apples">
+  <div class="product-img"><img src="images/product-4.svg" alt="Crisp Red Apples" loading="lazy"></div>
+  <div class="product-info"><span class="tag">Fruits</span><h3>Crisp Red Apples</h3>
+    <div class="product-row"><strong>$5.90<small> / kg</small></strong>
+    <button class="btn btn-sm add-cart" data-name="Crisp Red Apples">Add to cart</button></div></div>
+</article><article class="product-card" data-cat="Fruits" data-name="juicy oranges">
+  <div class="product-img"><img src="images/product-5.svg" alt="Juicy Oranges" loading="lazy"></div>
+  <div class="product-info"><span class="tag">Fruits</span><h3>Juicy Oranges</h3>
+    <div class="product-row"><strong>$4.90<small> / kg</small></strong>
+    <button class="btn btn-sm add-cart" data-name="Juicy Oranges">Add to cart</button></div></div>
+</article><article class="product-card" data-cat="Fruits" data-name="sweet strawberries">
+  <div class="product-img"><img src="images/product-6.svg" alt="Sweet Strawberries" loading="lazy"></div>
+  <div class="product-info"><span class="tag">Fruits</span><h3>Sweet Strawberries</h3>
+    <div class="product-row"><strong>$6.40<small> / kg</small></strong>
+    <button class="btn btn-sm add-cart" data-name="Sweet Strawberries">Add to cart</button></div></div>
+</article><article class="product-card" data-cat="Vegetables" data-name="baby spinach">
+  <div class="product-img"><img src="images/product-7.svg" alt="Baby Spinach" loading="lazy"></div>
+  <div class="product-info"><span class="tag">Vegetables</span><h3>Baby Spinach</h3>
+    <div class="product-row"><strong>$2.90<small> / kg</small></strong>
+    <button class="btn btn-sm add-cart" data-name="Baby Spinach">Add to cart</button></div></div>
+</article><article class="product-card" data-cat="Spices" data-name="red chilli powder">
+  <div class="product-img"><img src="images/product-8.svg" alt="Red Chilli Powder" loading="lazy"></div>
+  <div class="product-info"><span class="tag">Spices</span><h3>Red Chilli Powder</h3>
+    <div class="product-row"><strong>$3.60<small> / kg</small></strong>
+    <button class="btn btn-sm add-cart" data-name="Red Chilli Powder">Add to cart</button></div></div>
+</article><article class="product-card" data-cat="Spices" data-name="golden turmeric">
+  <div class="product-img"><img src="images/product-9.svg" alt="Golden Turmeric" loading="lazy"></div>
+  <div class="product-info"><span class="tag">Spices</span><h3>Golden Turmeric</h3>
+    <div class="product-row"><strong>$4.20<small> / kg</small></strong>
+    <button class="btn btn-sm add-cart" data-name="Golden Turmeric">Add to cart</button></div></div>
+</article><article class="product-card" data-cat="Vegetables" data-name="mixed bell peppers">
+  <div class="product-img"><img src="images/product-10.svg" alt="Mixed Bell Peppers" loading="lazy"></div>
+  <div class="product-info"><span class="tag">Vegetables</span><h3>Mixed Bell Peppers</h3>
+    <div class="product-row"><strong>$5.20<small> / kg</small></strong>
+    <button class="btn btn-sm add-cart" data-name="Mixed Bell Peppers">Add to cart</button></div></div>
+</article><article class="product-card" data-cat="Fruits" data-name="fresh bananas">
+  <div class="product-img"><img src="images/product-11.svg" alt="Fresh Bananas" loading="lazy"></div>
+  <div class="product-info"><span class="tag">Fruits</span><h3>Fresh Bananas</h3>
+    <div class="product-row"><strong>$2.80<small> / kg</small></strong>
+    <button class="btn btn-sm add-cart" data-name="Fresh Bananas">Add to cart</button></div></div>
+</article><article class="product-card" data-cat="Vegetables" data-name="purple eggplant">
+  <div class="product-img"><img src="images/product-12.svg" alt="Purple Eggplant" loading="lazy"></div>
+  <div class="product-info"><span class="tag">Vegetables</span><h3>Purple Eggplant</h3>
+    <div class="product-row"><strong>$3.40<small> / kg</small></strong>
+    <button class="btn btn-sm add-cart" data-name="Purple Eggplant">Add to cart</button></div></div>
+</article></div>
+    <p class="center empty-msg" id="emptyMsg" hidden>No products match your search.</p>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="images/logo.svg" alt="Orgo" width="150" height="50" class="footer-logo">
+      <p>Fresh, certified organic produce grown by local farmers and delivered to your door.</p>
+    </div>
+    <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="products.html">Products</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    <div><h4>Categories</h4><ul>
+      <li><a href="products.html">Vegetables</a></li><li><a href="products.html">Fruits</a></li><li><a href="products.html">Spices</a></li></ul></div>
+    <div><h4>Contact</h4><ul class="plain">
+      <li>12 Green Valley Road, Dhaka</li><li>+880 1700 000000</li><li>hello@orgoshop.example</li><li>Sat - Thu: 9am - 8pm</li></ul></div>
+  </div>
+  <div class="footer-bottom"><div class="container">&copy; <span id="year">2026</span> Orgo Organic Shop. All rights reserved.</div></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
